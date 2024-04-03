@@ -1,0 +1,32 @@
+.classroom-benefits{
+    margin-bottom: 80px;
+    padding: 80px 0;
+    background-color: $main-light;
+    
+    align-items: center;
+
+    @include mediaTablet{
+        font-size: 26px;
+        margin-bottom: 30px;
+        h2{
+            margin-bottom: 25px;
+        }
+        
+        p{
+            font-size: 16px;
+        }
+    }
+
+    
+
+
+    .classroom-bf__img{
+        img{
+            width: 100%;
+            @media screen and (max-width: $mobile) {
+                box-shadow: $box-shadow;
+            }
+        }
+    }
+    
+}

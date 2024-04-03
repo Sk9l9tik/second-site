@@ -1,0 +1,95 @@
+.distance{
+    margin-bottom: 65px;
+    background-color: $main-light;
+
+    .row{
+        align-items: center;
+    }
+   
+    .distance__text{
+        .distance__button{
+            display: flex;
+            gap: 20px;
+    
+            button {
+                font-size: 16px;
+                height: 50px;
+                border-radius: 12px;
+                transition: transform 200ms, box-shadow 200ms;
+                &:focus{
+                    transform: scale(.95)
+                }
+                &:hover{
+                    box-shadow: 0 0 10px 0 $main-2;
+                }
+            }
+    
+            .title_distance_btn-prymary{
+                width: 180px;
+                background-color: $main;
+                color: $light;
+                @include mediaTablet{
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    .distance__card {
+        background-color: #fff;
+        border-radius: 35px;
+        padding: 30px 50px 38px 30px;
+        margin-right: 59px;
+        width: 100%px;
+        margin: 87px 0 87px; 
+        color: #000;
+        
+        .title-2{
+            @include mediaTablet{
+                font-size: 27px;
+            }
+        }
+
+        p { 
+            font-size: 20px;
+            margin-bottom: 27px;
+
+            @include mediaTablet{
+                font-size: 16px;
+            }
+        }
+
+        .distance__author {
+            margin-left: 81px;
+
+            > p{
+                font-size: 16px;
+                position: relative;
+                
+                &:first-child {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: -5px;
+                        left: -81px;
+                        width: 65px;
+                        height: 65px;
+                        border-radius: 50%;
+                        background: url("../../img/persons/Ivanov-Ivan.svg") center no-repeat;
+                    }
+                }
+
+                &:last-child {
+                    color: $gray;
+                }
+            }
+        }
+        @include mediaTablet{
+            margin: 0;
+        }
+    }
+    @include mediaTablet{
+        padding: 40px 0;
+    }
+}
