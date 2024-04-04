@@ -1,6 +1,10 @@
 .opportunities{
     margin-bottom: 67px;
 
+    @include mediaMobile{
+
+    }
+    
     .row {
         row-gap: 20px;
     }

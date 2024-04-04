@@ -150,10 +150,22 @@ a {
           flex-direction: column;
   margin-top: 50px;
   margin-bottom: 80px;
+  /*
+      .title__img{
+          @include mediaMobile{
+              width: 100%;
+          }
+      }
+  */
 }
 @media screen and (max-width: 999px) {
   .header {
     min-height: unset;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header .container {
+    width: 100%;
   }
 }
 .header .header__top-row {
@@ -440,6 +452,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 576px) {
+  .classroom-benefits .container {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 999px) {
   .classroom-benefits {
     font-size: 26px;
@@ -455,7 +472,7 @@ a {
 .classroom-benefits .classroom-bf__img img {
   width: 100%;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 576px) {
   .classroom-benefits .classroom-bf__img img {
     -webkit-box-shadow: 0 10px 50px rgba(64, 71, 226, 0.2);
             box-shadow: 0 10px 50px rgba(64, 71, 226, 0.2);
@@ -464,6 +481,11 @@ a {
 
 .lessons {
   margin-bottom: 80px;
+}
+@media screen and (max-width: 576px) {
+  .lessons .container {
+    width: 100%;
+  }
 }
 .lessons .row {
   -webkit-box-align: center;
@@ -498,6 +520,11 @@ a {
 
 .opportunities {
   margin-bottom: 67px;
+}
+@media screen and (max-width: 576px) {
+  .opportunities .container {
+    width: 100%;
+  }
 }
 .opportunities .row {
   row-gap: 20px;
@@ -563,6 +590,11 @@ a {
   margin-bottom: 80px;
   text-align: center;
 }
+@media screen and (max-width: 576px) {
+  .how-it-work .container {
+    width: 100%;
+  }
+}
 .how-it-work .how-it-work__title {
   margin-bottom: 54px;
 }
@@ -600,6 +632,11 @@ a {
 .distance {
   margin-bottom: 65px;
   background-color: #DFE1FF;
+}
+@media screen and (max-width: 576px) {
+  .distance .container {
+    width: 100%;
+  }
 }
 .distance .row {
   -webkit-box-align: center;
@@ -695,6 +732,11 @@ a {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .footer .container {
+    width: 100%;
+  }
+}
 .footer .footer__logo {
   display: -webkit-box;
   display: -ms-flexbox;

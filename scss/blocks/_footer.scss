@@ -1,5 +1,9 @@
 .footer{
 
+    @include mediaMobile{
+        
+    }
+
     .footer__logo{
         display: flex;
         justify-content: space-between;

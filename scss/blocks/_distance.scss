@@ -2,6 +2,10 @@
     margin-bottom: 65px;
     background-color: $main-light;
 
+    @include mediaMobile{
+
+    }
+  
     .row{
         align-items: center;
     }

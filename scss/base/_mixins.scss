@@ -3,3 +3,12 @@
         @content;
     }    
 }
+
+@mixin mediaMobile{
+    @media screen and (max-width: $mobile) {
+        @content;
+        .container{
+            width: 100%;
+        }
+    }    
+}

@@ -5,6 +5,10 @@
     
     align-items: center;
 
+    @include mediaMobile{
+        
+    }
+
     @include mediaTablet{
         font-size: 26px;
         margin-bottom: 30px;

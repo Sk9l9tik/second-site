@@ -1,12 +1,15 @@
 .lessons{
     margin-bottom: 80px;
 
+    @include mediaMobile{
+        //width: 100%;
+    }
+
     .row{
         align-items: center;
         @include mediaTablet{
             flex-direction: column-reverse;
         }
-        
     }  
     .lesssons__img{
         img{

@@ -11,6 +11,9 @@
         min-height: unset;       
     }
 
+    @include mediaMobile{
+        
+    }
     
     .header__top-row{
         margin-bottom: 80px;
@@ -73,7 +76,13 @@
             display: block;
         }
     }
-
+/*
+    .title__img{
+        @include mediaMobile{
+            width: 100%;
+        }
+    }
+*/
     .header_title{
         display: flex;
         //justify-content: space-between;
@@ -160,7 +169,7 @@
                 position: relative;
                 
                 margin-right: 30px;
-    
+                
                 &:before {
                     content: '';
                     position: absolute;
@@ -169,7 +178,6 @@
                     width: 20px;
                     height: 20px;
                     background: url('../../img/header/Arrow.svg') center no-repeat;
-                   
                 }
             }
         }
