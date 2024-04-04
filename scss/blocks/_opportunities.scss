@@ -1,14 +1,5 @@
 .opportunities{
     margin-bottom: 67px;
-    
-    .swiper {
-        width: 400px;
-        height: 400px;
-      }
-
-    @include mediaMobile{
-
-    }
 
     .row {
         row-gap: 20px;
@@ -17,6 +8,19 @@
         text-align: center;
     }
     
+    @include mediaTablet{
+        .swiper1 {
+            width: 80%;
+            height: 400px;
+          }
+    }
+
+    @include mediaMobile{
+        .swiper1 {
+            width: 90%;
+            height: 400px;
+          }
+    }
     
     .chet{
         background-color: $secondary-light;

@@ -522,20 +522,26 @@ a {
 .opportunities {
   margin-bottom: 67px;
 }
-.opportunities .swiper {
-  width: 400px;
-  height: 400px;
-}
-@media screen and (max-width: 576px) {
-  .opportunities .container {
-    width: 100%;
-  }
-}
 .opportunities .row {
   row-gap: 20px;
 }
 .opportunities h2 {
   text-align: center;
+}
+@media screen and (max-width: 999px) {
+  .opportunities .swiper1 {
+    width: 80%;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .opportunities .swiper1 {
+    width: 90%;
+    height: 400px;
+  }
+  .opportunities .container {
+    width: 100%;
+  }
 }
 .opportunities .chet {
   background-color: #FFE1AD;
