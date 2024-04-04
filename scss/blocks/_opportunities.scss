@@ -1,10 +1,15 @@
 .opportunities{
     margin-bottom: 67px;
+    
+    .swiper {
+        width: 400px;
+        height: 400px;
+      }
 
     @include mediaMobile{
 
     }
-    
+
     .row {
         row-gap: 20px;
     }
