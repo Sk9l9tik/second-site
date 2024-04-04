@@ -53,6 +53,7 @@ function swiper1(){
   const swiper = new Swiper('.swiper', {
     // configure Swiper to use modules
     modules: [Navigation, Pagination],
+    direction: 'horizontal',
     loop: true,
     // If we need pagination
     pagination: {
