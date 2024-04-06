@@ -1,6 +1,8 @@
 .lessons{
     margin-bottom: 80px;
 
+    
+
     @include mediaMobile{
         //width: 100%;
     }
@@ -16,10 +18,12 @@
             border-radius: 10px;
             width: 100%;
             box-shadow: $box-shadow;
+            
         }
     }
 
     .lessons__hist{
+        padding-left: 80px;
         .title-2 {
             margin-bottom: 30px;
         }

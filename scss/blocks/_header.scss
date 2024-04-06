@@ -14,7 +14,8 @@
     @include mediaMobile{
         
     }
-    
+
+
     .header__top-row{
         margin-bottom: 80px;
         display: flex;
@@ -24,6 +25,9 @@
         @include mediaTablet{
             margin-bottom: 35px;
         }
+        .header__ref{
+            display: none;
+        }   
     }
 
     .header__top-row--mobile{
@@ -32,26 +36,41 @@
         background-color: $white;
         z-index: 9;
         top: 0;
-        left: 0;
+        left: 90px;
         height: 100%;
         //margin-left: 90px;
+        @include mediaMobileS{
+            left:0;
+        }
 
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
+        align-items: right;
         row-gap: 20px;
 
         padding-top: 20px;
         padding-bottom: 20px;
+        padding-left: 20px;
 
         .header__nav{
             display: block;
-        }
 
+        }
+        .header__ref{
+            display: block;
+            position:fixed;
+            text-align: right;
+            bottom: 15px;
+            right: 15px;
+        }   
         .nav__list{
+            position: fixed;
+            right: 20px;
+            top:130px;
             flex-direction: column;
-            align-items: center;
+            // align-items: right;
+            text-align: right;
             row-gap: 10px;
         }
 
@@ -59,6 +78,15 @@
             position: fixed;
             top: 50px;
             right: 50px;
+        }
+
+        .header_logo{
+            position: fixed;
+            left:0;
+            padding-left: 90px;
+            @include mediaMobileS{
+                padding-left: 20px;
+            }
         }
 
     }
@@ -85,7 +113,7 @@
 */
     .header_title{
         display: flex;
-        //justify-content: space-between;
+        align-items: center;
         @include mediaTablet{
             flex-direction: column;
             align-items: center;
@@ -161,7 +189,7 @@
 
                 width: 225px;
                 //background-color: $light;
-                border: 3px solid $main;
+                border: 1px solid $main;
                 color: $main;
                 align-items: center;
             }

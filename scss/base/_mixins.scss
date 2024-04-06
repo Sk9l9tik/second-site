@@ -12,3 +12,12 @@
         }
     }    
 }
+
+@mixin mediaMobileS{
+    @media screen and (max-width: $mobiles) {
+        @content;
+        .container{
+            width: 100%;
+        }
+    }    
+}
