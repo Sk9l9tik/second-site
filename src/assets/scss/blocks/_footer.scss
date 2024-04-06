@@ -1,0 +1,53 @@
+.footer{
+
+    @include mediaMobile{
+        
+    }
+
+    .footer__logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .fond{
+            width: 13%;
+            @include mediaTablet{
+                width: 30%;
+            }
+
+            @include mediaMobile{
+                width: 40%;
+            }
+            
+            @include mediaMobileS{
+                width: 50%;
+            }
+        }
+
+        @include mediaTablet{
+            gap: 35px;
+            flex-direction: column;
+        }
+    }
+    
+    .footer__line{
+        width: 100%;
+        margin: 43px 0 43px;
+        border-top: 2px solid $light;
+    }
+    
+    .footer__ref{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        margin-bottom: 50px;
+
+        @include mediaTablet{
+            text-align: center;
+            gap: 33px;
+            flex-direction: column;
+        }
+        
+    }
+}

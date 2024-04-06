@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    font-family: $Rubic;
+    background-color: $white;
+    color: $dark;
+    font-size: 18px;
+}
+
+.nav-link {
+    color: $dark;
+    transition: color .2s;
+    &:hover{
+        color: $gray;
+    }
+}
+
+a{
+    color:$dark;
+}
+
+
+.container{
+    width: 1230px;
+}
+
+.visually-hidden{
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    
+    position: absolute;
+
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+
+    white-space: nowrap;
+}
+
+.none{
+    display: none !important;
+}
+
+.title-2{
+    font-weight: 700;
+    font-size: 32px;
+    font-family: $Rubic;
+}
+
+.no-scroll{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}

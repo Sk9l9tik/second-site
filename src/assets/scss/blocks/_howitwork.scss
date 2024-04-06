@@ -1,0 +1,43 @@
+.how-it-work{
+    margin-bottom: 80px;
+    text-align: center;
+
+    @include mediaMobile{
+
+    }
+
+    .how-it-work__title{
+        margin-bottom: 54px;
+        @include mediaTablet{
+            margin-bottom: 25px;
+            align-items: center;
+        }
+    }
+
+    .how-it-work__card{
+        margin-right: 106px;
+
+        img{
+            margin-bottom: 24px;
+        }
+
+        .how-it-work__card__text{
+            a {
+                font-weight: 500;
+                font-size: 20px;
+                
+            }
+
+            p {
+                margin: 24px 21px;
+            }
+        }
+        @include mediaTablet{
+            margin-bottom: 50px;
+            align-items: center;
+            margin-right: 0;
+        }
+    }
+    
+
+}

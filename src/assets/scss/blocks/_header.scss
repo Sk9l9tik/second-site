@@ -1,0 +1,226 @@
+.header{
+    min-height:607px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 50px;
+    margin-bottom: 80px;
+
+    @include mediaTablet{
+        min-height: unset;       
+    }
+
+    @include mediaMobile{
+        
+    }
+
+
+    .header__top-row{
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+        
+        @include mediaTablet{
+            margin-bottom: 35px;
+        }
+        .header__ref{
+            display: none;
+        }   
+    }
+
+    .mobile{
+
+        position: fixed;
+        background-color: $white;
+        z-index: 9;
+        top: 0;
+        left: 90px;
+        height: 100%;
+        //margin-left: 90px;
+        @include mediaMobileS{
+            left:0;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: right;
+        row-gap: 20px;
+
+        padding-top: 50px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+
+        .header__nav{
+            display: block;
+
+        }
+        .header__ref{
+            display: block;
+            position:fixed;
+            text-align: right;
+            bottom: 15px;
+            right: 15px;
+        }   
+        .nav__list{
+            position: fixed;
+            @include mediaMobile{
+                right: 15px;
+            }
+            right: 90px;
+            top:130px;
+            flex-direction: column;
+            // align-items: right;
+            text-align: right;
+            row-gap: 10px;
+        }
+
+        .header__nav-btn{
+            position: fixed;
+            top: 70px;
+            @include mediaMobile{
+                right: 15px;
+            }
+            right: 90px;
+
+        }
+
+        .header_logo{
+            position: fixed;
+            left:0;
+            padding-left: 90px;
+            @include mediaMobileS{
+                padding-left: 20px;
+            }
+        }
+
+    }
+
+    .header__nav{
+        @include mediaTablet{
+            display: none;
+        }
+    }
+
+    .header__nav-btn{
+        display: none;
+
+        @include mediaTablet{
+            display: block;
+        }
+    }
+/*
+    .title__img{
+        @include mediaMobile{
+            width: 100%;
+        }
+    }
+*/
+    .header_title{
+        display: flex;
+        align-items: center;
+        @include mediaTablet{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .title__text{
+            font-size: inherit;
+            text-align: left;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 16px;
+    
+    
+            @include mediaTablet{
+                font-size: 38px;
+                margin-bottom: 0;
+                text-align: inherit;
+                padding-bottom: 10px;
+            }
+        }
+        
+        p{
+            @include mediaTablet{
+                font-size: 20px;
+                text-align:inherit;
+                padding-bottom: 15px;
+            }
+            color: $gray;
+        }
+    
+        .header___buttons{  
+            display: flex;
+            gap: 20px;
+    
+            @include mediaTablet{
+                align-items: center;
+                flex-direction: column;
+                gap: 7px;
+            }
+
+            button {
+                font-size: 16px;
+                height: 50px;
+                border-radius: 12px;
+                transition: transform 200ms, box-shadow 200ms;
+                &:focus{
+                    transform: scale(.95)
+                }
+                &:hover{
+                    box-shadow: 0 0 10px 0 $main-2;
+                }
+
+            }
+    
+            .title_header_btn-prymary{
+                    
+            @include mediaTablet{
+                width: 300px;
+            }
+
+                width: 180px;
+                background-color: $main;
+                color: $light;
+            }
+    
+            .title_header_btn-secondary{
+
+                @include mediaTablet{
+                    width: 300px;
+                    margin-bottom: 20px;
+                }
+
+                width: 225px;
+                //background-color: $light;
+                border: 1px solid $main;
+                color: $main;
+                align-items: center;
+            }
+            span{
+                position: relative;
+                
+                margin-right: 30px;
+                
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 20px;
+                    height: 20px;
+                    background: url('../../../../public/header/Arrow.svg') center no-repeat;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+
+

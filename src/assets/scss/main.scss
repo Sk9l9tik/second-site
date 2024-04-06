@@ -1,0 +1,21 @@
+//import
+@import "../../../node_modules//swiper/swiper-bundle.min.css";
+
+//base
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/base';
+
+
+//blocks
+@import './blocks/header';
+@import './blocks/nav';
+@import './blocks/nav-icon';
+@import './blocks/classroom';
+@import './blocks/lessons';
+@import './blocks/opportunities';
+@import './blocks/card';
+@import './blocks/howitwork';
+@import './blocks/distance';
+@import './blocks/footer';

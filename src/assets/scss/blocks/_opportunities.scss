@@ -1,0 +1,49 @@
+.opportunities{
+    margin-bottom: 67px;
+
+    .row {
+        row-gap: 20px;
+    }
+    h2{
+        text-align: center;
+    }
+    .swiper{
+        display: none;
+    }
+
+    @include mediaTablet{
+        .swiper {
+            display: block;
+            width: 80%;
+            height: 400px;
+          }
+        .swiper1{
+            display: none;
+        }
+    }
+
+    @include mediaMobile{
+        .swiper {
+            display: block;
+            width: 90%;
+            height: 400px;
+          }
+        .swiper1{
+            display: none;
+        }
+    }
+    
+    .chet{
+        background-color: $secondary-light;
+        box-shadow: $box-shadow-orange;
+    }
+
+    .nechet{
+        background-color: $main-light;
+        box-shadow: $box-shadow;
+    }
+}
+
+.opportunities__title{
+    margin-bottom: 45px;
+}
